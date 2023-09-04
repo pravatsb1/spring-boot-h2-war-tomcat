@@ -17,6 +17,9 @@ pipelines:
                     command: mvn
                     arguments:
                     - package
+              resources:
+                - linux
+                - python3
       - Start_Tomcat_Stage:
           clean_workspace: true
           jobs:
@@ -28,6 +31,9 @@ pipelines:
                     arguments:
                     - start_tomcat.sh
                     - /opt/tomcat-10.0.8
+              resources:
+                - linux
+                - python3
       - Deploy_Project_Stage:
           clean_workspace: true
           jobs:
@@ -39,3 +45,6 @@ pipelines:
                     arguments:
                     - -version
                     #- tomcat10:deploy
+              resources:
+                - linux
+                - python3      
