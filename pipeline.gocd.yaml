@@ -19,7 +19,7 @@ pipelines:
                     - package
               resources:
                 - linux
-                - python3
+                - spring
       - Start_Tomcat_Stage:
           clean_workspace: true
           jobs:
@@ -33,7 +33,7 @@ pipelines:
                     - /opt/tomcat-10.0.8
               resources:
                 - linux
-                - python3
+                - spring
       - Deploy_Project_Stage:
           clean_workspace: true
           jobs:
@@ -47,4 +47,4 @@ pipelines:
                     #- tomcat10:deploy
               resources:
                 - linux
-                - python3      
+                - spring      
