@@ -11,6 +11,7 @@ pipelines:
           clean_workspace: true
           jobs:            
             build_task:
+              environment: Production
               tasks:
                 - exec:
                     run_if: passed
@@ -21,6 +22,7 @@ pipelines:
           clean_workspace: true
           jobs:
             start_tomcat_task:
+              environment: Production
               tasks:
                 - exec:
                     run_if: passed
@@ -32,6 +34,7 @@ pipelines:
           clean_workspace: true
           jobs:
             deploy_project_task:
+              environment: Production
               tasks:
                 - exec:
                     run_if: passed
