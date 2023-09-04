@@ -11,7 +11,6 @@ pipelines:
           clean_workspace: true
           jobs:            
             build_task:
-              agents: datamgt-gocd-agent
               tasks:
                 - exec:
                     run_if: passed
@@ -22,7 +21,6 @@ pipelines:
           clean_workspace: true
           jobs:
             start_tomcat_task:
-              agents: datamgt-gocd-agent
               tasks:
                 - exec:
                     run_if: passed
@@ -34,7 +32,6 @@ pipelines:
           clean_workspace: true
           jobs:
             deploy_project_task:
-              agents: datamgt-gocd-agent
               tasks:
                 - exec:
                     run_if: passed
