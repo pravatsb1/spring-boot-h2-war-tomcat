@@ -1,7 +1,7 @@
 format_version: 2
 pipelines:
-  pipeline_code_demo:
-    group: defaultGroup
+  pipeline_spring_boot_demo:
+    group: springbootdemoapp
     materials:
       backend:
         git: https://github.com/iamvickyav/spring-boot-h2-war-tomcat.git
