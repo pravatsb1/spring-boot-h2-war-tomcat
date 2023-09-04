@@ -4,8 +4,8 @@ pipelines:
     group: springbootdemoapp
     materials:
       backend:
-        git: https://github.com/iamvickyav/spring-boot-h2-war-tomcat.git
-        branch: master
+        git: https://github.com/pravatsb1/spring-boot-h2-war-tomcat.git
+        branch: develop
     stages:
       - Build_Demo_Project_Stage:
           clean_workspace: true
