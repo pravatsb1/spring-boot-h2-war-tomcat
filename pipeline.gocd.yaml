@@ -27,7 +27,7 @@ pipelines:
                     command: /bin/sh
                     arguments:
                     - start_tomcat.sh
-                    - /opt/tomcat-8.5.41 
+                    - /opt/tomcat-10.0.8
       - Deploy_Project_Stage:
           clean_workspace: true
           jobs:
