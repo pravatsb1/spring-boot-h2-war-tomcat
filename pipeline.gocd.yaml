@@ -37,4 +37,5 @@ pipelines:
                     run_if: passed
                     command: mvn
                     arguments:
-                    - tomcat10:deploy
+                    - version
+                    #- tomcat10:deploy
