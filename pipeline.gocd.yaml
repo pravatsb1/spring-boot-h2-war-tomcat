@@ -9,8 +9,7 @@ pipelines:
     stages:
       - Build_Demo_Project_Stage:
           clean_workspace: true
-          jobs:
-            agents: datamgt-gocd-agent
+          jobs:            
             build_task:
               tasks:
                 - exec:
@@ -21,7 +20,6 @@ pipelines:
       - Start_Tomcat_Stage:
           clean_workspace: true
           jobs:
-            agents: datamgt-gocd-agent
             start_tomcat_task:
               tasks:
                 - exec:
@@ -33,7 +31,6 @@ pipelines:
       - Deploy_Project_Stage:
           clean_workspace: true
           jobs:
-            agents: datamgt-gocd-agent
             deploy_project_task:
               tasks:
                 - exec:
